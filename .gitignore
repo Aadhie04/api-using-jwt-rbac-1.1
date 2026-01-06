@@ -1,16 +1,42 @@
-# Node rules:
-## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
+## Build results
+bin/
+obj/
 
-## Dependency directory
-## Commenting this out is preferred by some people, see
-## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
-node_modules
+## ASP.NET Core
+appsettings.Development.json
+appsettings.Local.json
 
-# Book build output
-_book
+## User Secrets
+secrets.json
 
-# eBook build output
-*.epub
-*.mobi
-*.pdf
+## Environment variables
+.env
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## VS Code
+.vscode/
+
+## Rider
+.idea/
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Logs
+*.log
+logs/
+
+## NuGet
+*.nupkg
+.nuget/
+
+## Docker
+docker-compose.override.yml
+
