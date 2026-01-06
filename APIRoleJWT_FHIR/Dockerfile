@@ -12,7 +12,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copy solution and projects
-COPY APIRoleJWT_FHIR.sln .
+COPY APIUsingJWT.sln .
 COPY APIUsingJWT/APIUsingJWT.csproj APIUsingJWT/
 COPY APIUsingJWT.Domain/APIUsingJWT.Domain.csproj APIUsingJWT.Domain/
 COPY APIUsingJWT.Data/APIUsingJWT.Data.csproj APIUsingJWT.Data/
