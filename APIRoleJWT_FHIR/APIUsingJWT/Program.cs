@@ -141,11 +141,15 @@ builder.Services.AddSwaggerGen(c =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+//if (app.Environment.IsDevelopment())
+//{
+    //app.UseSwagger();
+    //app.UseSwaggerUI();
+//}
+//to use swagger for production
+app.UseSwagger();
+app.UseSwaggerUI();
+
 // Identify the route
 // to ensure logs include the
 // specific API controller/action being hit
