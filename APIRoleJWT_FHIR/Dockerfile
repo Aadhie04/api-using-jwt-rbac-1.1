@@ -19,7 +19,7 @@ COPY APIUsingJWT.Data/APIUsingJWT.Data.csproj APIUsingJWT.Data/
 COPY APIUsingJWT.Services/APIUsingJWT.Services.csproj APIUsingJWT.Services/
 
 # Restore dependencies
-RUN dotnet restore APIRoleJWT_FHIR.sln
+RUN dotnet restore APIUsingJWT.sln
 
 # Copy everything else
 COPY . .
